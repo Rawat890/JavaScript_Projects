@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Generator</title>
+
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+            font-size: 15px;
+        }
+
+        .ColorGenerationContainer{
+           border: 4px solid rgb(161, 135, 135);
+           position: relative;
+           padding: 10px;
+           margin: 10px;
+           display: flex;
+           gap:7px;
+        }
+
+        .hexContainer, .rgbContainer{
+           flex: 1;
+           min-height: 100vh;
+            
+        }
+
+        .hexContainer button{
+            padding: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            border: 3px solid black;
+            border-radius: 10px;
+            font-weight: 700;
+        }
+
+        button:hover{
+            cursor: pointer;
+            color: red;
+            font-size: 15px;
+            font-weight: 700;
+            
+        }
+
+        
+        .hexContainer{
+            background-color: greenyellow;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .rgbContainer{
+            background-color: darkgoldenrod;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+      
+
+        .Hex-value{
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .rgbButton{
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+            border: 3px solid black;
+            font-weight: 700;
+        }
+        .rgbCopy{
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+            border: 3px solid black;
+            font-weight: 700;
+        }
+
+        .RGBvalue{
+            padding: 10px;
+            font-weight: 800;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="ColorGenerationContainer">
+
+        <div class="hexContainer">
+            <p class="Hex-value">#ffffff</p>
+            <button class="Hex-btn">Create Hex Color</button>
+            <button class="HexCopy">Copy to Clipboard</button>
+        </div><br>
+        
+        <div class="rgbContainer">
+
+           <p class="RGBvalue">rgb(255, 255, 255)</p>
+            <div>
+                <label for="">Red</label>
+            <input type="range" min = "0" max="255" name="" class="red"><br>
+          </div>
+
+            <div>
+                <label for="">Green</label>
+            <input type="range" min = "0" max="255" name="" class="green"><br>
+          </div>
+
+            <div>
+                <label for="">Blue</label>
+            <input type="range" min = "0" max="255" name="" class="blue"><br>
+          </div>
+
+          <button class="rgbButton">Create rgb Color</button>
+          <button class="rgbCopy">Copy to Clipboard</button>
+
+           
+        </div>
+
+    </div>
+</body>
+
+<script src="ColorGenerator.js"></script>
+
+</html>
