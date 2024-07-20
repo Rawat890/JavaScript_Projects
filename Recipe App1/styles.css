@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  animation-range: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  padding: 15px;
+}
+
+h1 {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 3vw;
+}
+
+.recipe-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.recipe-list .recipe-item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 18px;
+  border: 5px solid rgb(200, 70, 167);
+  background: linear-gradient(90deg, rgb(234, 255, 0), rgb(204, 98, 31));
+}
+
+.recipe-list .recipe-item .recipe-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.recipe-list .recipe-item .recipe-details-button {
+  padding: 15px;
+  content: "Recipe Details";
+}
+
+/*name*/
+.recipe-list .recipe-item .recipe-name {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/*cuisine*/
+.recipe-list .recipe-item .recipe-cuisine {
+  font-size: 25px;
+  color: rgb(68, 9, 162);
+  font-weight: bolder;
+}
+
+/*ingredient*/
+.recipe-list .recipe-item .recipe-ingredients {
+  font-size: 20px;
+}
+
+.recipe-list .recipe-item .recipe-meal-type {
+  font-size: 32px;
+  color: black;
+  font-weight: 800;
+}
+
+/*button*/
+
+/*button*/
+.recipe-details-button-labeled::before {
+  content: "Show Details"; /* This is the name that will be displayed on the button */
+  display: inline-block;
+  margin-right: 8px; /* Adjust the space between the text and the actual button content */
+  font-weight: bold; /* Adjust styling as needed */
+  font-size: 35px;
+  color: #000; /* Adjust color as needed */
+}
+
+.recipe-list .recipe-item .recipe-details-button {
+  padding: 12px 20px;
+  border: none;
+  background-color: rgb(241, 190, 36);
+  letter-spacing: 3px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/*rating*/
+.recipe-list .recipe-item .recipe-rating{
+    font-size: 24px;
+    font-weight: bold;
+}
